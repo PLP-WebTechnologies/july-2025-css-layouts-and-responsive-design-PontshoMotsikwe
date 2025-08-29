@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the Ballroom</title>
+    <meta name="description" content="An HTML5 page about ballroom dancing" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Ballroom</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#dances">Dances</a>
+      <a href="#steps">Steps</a>
+      <a href="#video">Video</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+
+    <div class="container">
+      <main>
+        <section id="about">
+          <h2>About Ballroom Dancing</h2>
+          <p>
+            Ballroom dancing is a graceful and elegant form of dance that
+            combines rhythm, movement, and connection between partners. It is
+            enjoyed socially and competitively around the world.
+          </p>
+        </section>
+
+        <section id="dances">
+          <h2>Popular Ballroom Dances</h2>
+          <ul>
+            <li>Waltz</li>
+            <li>Tango</li>
+            <li>Foxtrot</li>
+            <li>Quickstep</li>
+            <li>Viennese Waltz</li>
+          </ul>
+        </section>
+
+        <section id="video">
+          <h2>Introduction Video</h2>
+          <video width="400" height="300" controls>
+            <source src="bdancing.mp4" type="video/mp4" />
+            Your browser does not support the video.
+          </video>
+        </section>
+
+        <section id="pricing">
+          <h2>Ballroom Event Pricing</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Beginner Workshop</h3>
+              <p>R450</p>
+              <p>Basic steps and partner practice</p>
+            </div>
+            <div class="card">
+              <h3>Advanced Workshop</h3>
+              <p>R900</p>
+              <p>Complex routines and performance tips</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <h2>Steps to Start Ballroom Dancing</h2>
+        <ol>
+          <li>Find a local dance studio or class</li>
+          <li>Choose a style you would like to learn</li>
+          <li>Practice basic steps with a partner</li>
+          <li>Listen to the music and follow the rhythm</li>
+          <li>Keep practicing and have fun!</li>
+        </ol>
+      </aside>
+    </div>
+
+    <section id="signup">
+      <h2>Sign Up for Dance Classes</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+          autocomplete="on"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select country</option>
+          <option value="za">South Africa</option>
+          <option value="ng">Nigeria</option>
+          <option value="ke">Kenya</option>
+        </select>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked />
+
+        <label for="bio">Short Bio:</label>
+        <textarea
+          id="bio"
+          name="bio"
+          placeholder="Tell us about yourself"
+          rows="4"
+          cols="50"
+        ></textarea>
+
+        <input type="submit" value="Sign Up" />
+      </form>
+    </section>
+
+    <footer class="footer-text">&copy; 2025 Welcome to the Ballroom</footer>
+  </body>
+</html>
